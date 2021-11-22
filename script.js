@@ -180,3 +180,15 @@ function getDistance(particle1, particle2) {
 
   return Math.sqrt(deltaX * deltaX + deltaY * deltaY)
 }
+
+function openNav() {
+  document.getElementById('mySidenav').style.top = '0'
+  document.getElementById('burger').style.display = 'none'
+  document.getElementById('close-menu').style.display = 'block'
+}
+
+function closeNav() {
+  document.getElementById('mySidenav').style.top = '-100vh'
+  document.getElementById('burger').style.display = 'block'
+  document.getElementById('close-menu').style.display = 'none'
+}

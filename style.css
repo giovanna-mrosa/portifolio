@@ -10,6 +10,89 @@ body {
   color: #fff;
 }
 
+.menu {
+  cursor: pointer;
+  background-color: #2f1624;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.menu div {
+  width: 28px;
+  height: 4px;
+  background-color: #706a6ad7;
+  margin-top: 7px;
+  margin-left: 6px;
+}
+
+.close-menu {
+  display: none;
+  cursor: pointer;
+  background-color: #2f1624;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.close-menu img {
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+nav {
+  position: fixed;
+  top: -100vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2f1624;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav li {
+  margin: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffbe41;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 main {
   display: flex;
   flex-direction: column;

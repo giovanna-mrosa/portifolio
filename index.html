@@ -13,9 +13,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="nav-list" id="mySidenav">
+        <ul>
+          <li><a href="#portifolio-link">Portifolio</a></li>
+          <li><a href="#aboutme-link">About Me</a></li>
+          <li><a href="#contactme-link">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section class="section-1">
+        <div class="menu" id="burger" onclick="openNav()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <div class="close-menu" id="close-menu" onclick="closeNav()">
+          <img src="./assets/x.png" alt="X icon" />
+        </div>
         <canvas id="c"></canvas>
         <h1 class="title-1">
           <span class="float">H</span><span class="float">i</span
@@ -41,11 +57,11 @@
           ><span class="float">.</span>
         </h1>
         <h2 class="tech-h2">HTML / CSS / <span class="color-ye">JS</span></h2>
-        <a href="#contactme"
+        <a href="#contactme-link"
           ><input type="button" value="Contact Me" class="btn-cntct button"
         /></a>
       </section>
-      <section class="section-2">
+      <section class="section-2" id="portifilo-link">
         <div class="first-roll">
           <div class="text-fisrt-roll">
             <h1 class="title-2">
@@ -128,7 +144,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-3">
+      <section class="section-3" id="aboutme-link">
         <div class="column-1">
           <h1 class="title-2 title-section-3">
             <span class="float">M</span><span class="float">e</span
@@ -172,7 +188,7 @@
           />
         </div>
       </section>
-      <section class="section-4">
+      <section class="section-4" id="contactme-link">
         <div class="column-1-section-4">
           <div class="box-address">
             <p class="address">
@@ -187,7 +203,7 @@
           </div>
           <img src="./assets/Untitled.png" alt="Atibaia City" class="map" />
         </div>
-        <div class="column-2-section4" id="contactme">
+        <div class="column-2-section4">
           <div class="first-row">
             <h1 class="title-3">Contact Me</h1>
             <p class="email">
