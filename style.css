@@ -228,8 +228,9 @@ main {
   margin-right: 60px;
 }
 
-.second-roll {
+.items {
   display: flex;
+  margin-top: 50px;
 }
 
 figure.img-link {
@@ -241,18 +242,20 @@ figure.img-link {
   width: 100%;
   background: #000000;
   text-align: center;
-  margin-top: 50px;
 }
+
 figure.img-link * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 figure.img-link img {
   opacity: 1;
   width: 100%;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
+
 figure.img-link figcaption {
   position: absolute;
   bottom: 0;
@@ -261,6 +264,7 @@ figure.img-link figcaption {
   width: 100%;
   height: 100%;
 }
+
 figure.img-link figcaption::before {
   position: absolute;
   top: 50%;
@@ -277,6 +281,7 @@ figure.img-link figcaption::before {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
+
 figure.img-link h2,
 figure.img-link p {
   margin: 0 0 5px;
@@ -285,6 +290,7 @@ figure.img-link p {
   transition: opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s,
     -o-transform 0.35s, transform 0.35s;
 }
+
 figure.img-link h2 {
   word-spacing: -0.15em;
   font-weight: 500;
@@ -294,14 +300,17 @@ figure.img-link h2 {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
+
 figure.img-link h2 span {
   font-weight: 800;
 }
+
 figure.img-link p {
   font-weight: 300;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
+
 figure.img-link a {
   left: 0;
   right: 0;
@@ -310,9 +319,11 @@ figure.img-link a {
   position: absolute;
   color: #ffbe41;
 }
+
 figure.img-link:hover img {
   opacity: 0.35;
 }
+
 figure.img-link:hover figcaption h2 {
   opacity: 1;
   -webkit-transform: translate3d(0%, 0%, 0);
@@ -320,11 +331,13 @@ figure.img-link:hover figcaption h2 {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
+
 figure.img-link:hover figcaption p {
   opacity: 0.9;
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
+
 figure.img-link:hover figcaption::before {
   background: rgba(255, 255, 255, 0);
   top: 30px;
@@ -1083,6 +1096,23 @@ footer a:hover {
   .btn-more {
     margin: 0px 0px 0px 35px;
     width: 150px;
+  }
+  .second-roll {
+    width: 100vw;
+  }
+  .items {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .img-link {
+    flex: none;
+    width: 100%;
+    scroll-snap-align: start;
+  }
+  .img-link img {
+    width: 100%;
+    height: 100%;
   }
   .section-3 {
     flex-wrap: wrap;
