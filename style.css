@@ -232,7 +232,7 @@ main {
   display: flex;
 }
 
-figure.snip0015 {
+figure.img-link {
   color: #ffbe41;
   position: relative;
   overflow: hidden;
@@ -243,17 +243,17 @@ figure.snip0015 {
   text-align: center;
   margin-top: 50px;
 }
-figure.snip0015 * {
+figure.img-link * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-figure.snip0015 img {
+figure.img-link img {
   opacity: 1;
   width: 100%;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
-figure.snip0015 figcaption {
+figure.img-link figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -261,7 +261,7 @@ figure.snip0015 figcaption {
   width: 100%;
   height: 100%;
 }
-figure.snip0015 figcaption::before {
+figure.img-link figcaption::before {
   position: absolute;
   top: 50%;
   right: 30px;
@@ -277,15 +277,15 @@ figure.snip0015 figcaption::before {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
-figure.snip0015 h2,
-figure.snip0015 p {
+figure.img-link h2,
+figure.img-link p {
   margin: 0 0 5px;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s,
     -o-transform 0.35s, transform 0.35s;
 }
-figure.snip0015 h2 {
+figure.img-link h2 {
   word-spacing: -0.15em;
   font-weight: 500;
   text-transform: uppercase;
@@ -294,15 +294,15 @@ figure.snip0015 h2 {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-figure.snip0015 h2 span {
+figure.img-link h2 span {
   font-weight: 800;
 }
-figure.snip0015 p {
+figure.img-link p {
   font-weight: 300;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-figure.snip0015 a {
+figure.img-link a {
   left: 0;
   right: 0;
   top: 0;
@@ -310,22 +310,22 @@ figure.snip0015 a {
   position: absolute;
   color: #ffbe41;
 }
-figure.snip0015:hover img {
+figure.img-link:hover img {
   opacity: 0.35;
 }
-figure.snip0015:hover figcaption h2 {
+figure.img-link:hover figcaption h2 {
   opacity: 1;
   -webkit-transform: translate3d(0%, 0%, 0);
   transform: translate3d(0%, 0%, 0);
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-figure.snip0015:hover figcaption p {
+figure.img-link:hover figcaption p {
   opacity: 0.9;
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
-figure.snip0015:hover figcaption::before {
+figure.img-link:hover figcaption::before {
   background: rgba(255, 255, 255, 0);
   top: 30px;
   bottom: 30px;
@@ -1049,6 +1049,9 @@ footer a:hover {
 }
 
 @media (max-width: 375px) {
+  nav {
+    font-size: 22px;
+  }
   .title-1 {
     font-size: 50px;
     margin: 0px 0px 0px 35px;
