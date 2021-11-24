@@ -921,6 +921,7 @@ figure.img-link:hover figcaption::before {
 
 .p-section-3 {
   height: 100%;
+  font-size: 18px;
 }
 
 .column-2 {
@@ -1126,6 +1127,7 @@ footer a:hover {
   .p-section-3 {
     height: 0;
     width: 80vw;
+    font-size: 16px;
   }
   .column-2 {
     width: 100%;
@@ -1236,7 +1238,7 @@ footer a:hover {
 @media (max-width: 320px) {
   .section-3 {
     flex-wrap: wrap;
-    padding-top: 35px;
+    padding-top: 50px;
   }
   .title-section-3 {
     line-height: 55px;
