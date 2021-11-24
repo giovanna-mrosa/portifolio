@@ -230,15 +230,13 @@ main {
 
 .items {
   display: flex;
-  margin-top: 50px;
 }
 
 figure.img-link {
   color: #ffbe41;
   position: relative;
   overflow: hidden;
-  max-width: 385px;
-  max-height: 310px;
+  max-height: 320px;
   width: 100%;
   background: #000000;
   text-align: center;
@@ -970,7 +968,6 @@ figure.img-link:hover figcaption::before {
   line-height: 70px;
   letter-spacing: 0.24em;
   color: #ffbe41;
-  margin-top: 36px;
 }
 
 .map {
@@ -996,7 +993,8 @@ figure.img-link:hover figcaption::before {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-right: 60px;
+  margin: 36px 60px 36px 0;
+  justify-content: space-between;
 }
 
 .first-row {
@@ -1009,7 +1007,6 @@ figure.img-link:hover figcaption::before {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 200px;
 }
 
 .email {
@@ -1089,6 +1086,7 @@ footer a:hover {
   }
   .first-roll {
     flex-wrap: wrap;
+    margin-bottom: 50px;
   }
   .text-fisrt-roll {
     margin: 35px;
@@ -1116,10 +1114,16 @@ footer a:hover {
   }
   .section-3 {
     flex-wrap: wrap;
+    margin-top: 200px;
+    padding-top: 35px;
+    padding-bottom: 235px;
   }
   .column-1 {
     width: 100%;
     margin-left: 35px;
+  }
+  .title.title-section-3 {
+    line-height: 65px;
   }
   .p-section-3 {
     height: 0;
@@ -1139,28 +1143,59 @@ footer a:hover {
   .section-4 {
     flex-wrap: wrap;
     justify-content: center;
+    width: 100vw;
   }
   .map {
-    width: 100%;
+    width: 100vw;
     height: 50vh;
   }
   .column-2-section4 {
-    margin: 0;
+    margin: 0 0 24px 0;
+    align-items: center;
+  }
+  .first-row {
+    align-items: center;
   }
   .title-3 {
     font-size: 40px;
   }
   .email {
     font-size: 18px;
-    margin-top: 35px;
+    margin-top: 10px;
   }
   .second-row {
-    margin-top: 80px;
+    align-items: center;
   }
   .title-4 {
     font-size: 25px;
   }
   .links {
-    margin-top: 65px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-3 {
+    flex-wrap: wrap;
+    margin-top: 200px;
+    padding-top: 35px;
+    padding-bottom: 215px;
+  }
+  .title-section-3 {
+    line-height: 55px;
+  }
+  .p-section-3 {
+    width: 77vw;
+    font-size: 14px;
+  }
+  .column-2-section4 {
+    margin: 0 0 24px 0;
+    align-items: center;
+  }
+  .title-3 {
+    font-size: 35px;
+  }
+  .title-4 {
+    font-size: 20px;
   }
 }
