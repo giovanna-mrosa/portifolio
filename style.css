@@ -870,7 +870,7 @@ figure.img-link:hover figcaption::before {
   animation: animStar 150s linear infinite;
 }
 #stars3:after {
-  content: 'e';
+  content: ' ';
   position: absolute;
   top: 2000px;
   background: transparent;
@@ -1114,9 +1114,7 @@ footer a:hover {
   }
   .section-3 {
     flex-wrap: wrap;
-    margin-top: 200px;
     padding-top: 35px;
-    padding-bottom: 235px;
   }
   .column-1 {
     width: 100%;
