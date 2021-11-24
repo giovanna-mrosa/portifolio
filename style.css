@@ -1058,6 +1058,122 @@ footer a:hover {
   color: #ffbe41;
 }
 
+@media (max-width: 425px) {
+  nav {
+    font-size: 22px;
+  }
+  .title-1 {
+    font-size: 55px;
+    margin: 0px 0px 0px 40px;
+  }
+  .tech-h2 {
+    font-size: 20px;
+    margin-left: 40px;
+  }
+  .btn-cntct {
+    margin-left: 40px;
+    width: 185px;
+  }
+  .button {
+    font-size: 17px;
+  }
+  .first-roll {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .text-fisrt-roll {
+    margin: 40px;
+  }
+  .title-2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+  .paragraph-first-roll {
+    width: 80vw;
+  }
+  .btn-more {
+    margin: 0px 0px 0px 40px;
+    width: 160px;
+  }
+  .second-roll {
+    width: 100vw;
+  }
+  .items {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .img-link {
+    flex: none;
+    width: 100%;
+    scroll-snap-align: start;
+  }
+  .img-link img {
+    width: 100%;
+    height: 100%;
+  }
+  .section-3 {
+    flex-wrap: wrap;
+    margin-top: 200px;
+    padding-top: 35px;
+    padding-bottom: 235px;
+  }
+  .column-1 {
+    width: 100%;
+    margin-left: 40px;
+  }
+  .title.title-section-3 {
+    line-height: 65px;
+  }
+  .p-section-3 {
+    height: 0;
+    width: 80vw;
+  }
+  .column-2 {
+    width: 100%;
+    margin-right: 0px;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .unicorn {
+    width: 190px;
+    height: fit-content;
+    margin-bottom: 35px;
+  }
+  .section-4 {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+  }
+  .map {
+    width: 100vw;
+    height: 50vh;
+  }
+  .column-2-section4 {
+    margin: 0 0 24px 0;
+    align-items: center;
+  }
+  .first-row {
+    align-items: center;
+  }
+  .title-3 {
+    font-size: 45px;
+  }
+  .email {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .second-row {
+    align-items: center;
+  }
+  .title-4 {
+    font-size: 25px;
+  }
+  .links {
+    margin-top: 30px;
+  }
+}
+
 @media (max-width: 375px) {
   nav {
     font-size: 22px;
@@ -1067,7 +1183,6 @@ footer a:hover {
     margin: 0px 0px 0px 35px;
   }
   .tech-h2 {
-    font-size: 20px;
     margin-left: 35px;
   }
   .btn-cntct {
@@ -1112,65 +1227,11 @@ footer a:hover {
     width: 100%;
     height: 100%;
   }
-  .section-3 {
-    flex-wrap: wrap;
-    margin-top: 200px;
-    padding-top: 35px;
-    padding-bottom: 235px;
-  }
   .column-1 {
-    width: 100%;
     margin-left: 35px;
-  }
-  .title.title-section-3 {
-    line-height: 65px;
-  }
-  .p-section-3 {
-    height: 0;
-    width: 80vw;
-  }
-  .column-2 {
-    width: 100%;
-    margin-right: 0px;
-    justify-content: center;
-    align-items: flex-end;
-  }
-  .unicorn {
-    width: 190px;
-    height: fit-content;
-    margin-bottom: 35px;
-  }
-  .section-4 {
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100vw;
-  }
-  .map {
-    width: 100vw;
-    height: 50vh;
-  }
-  .column-2-section4 {
-    margin: 0 0 24px 0;
-    align-items: center;
-  }
-  .first-row {
-    align-items: center;
   }
   .title-3 {
     font-size: 40px;
-  }
-  .email {
-    font-size: 18px;
-    margin-top: 10px;
-  }
-  .second-row {
-    align-items: center;
-  }
-  .title-4 {
-    font-size: 25px;
-  }
-  .links {
-    margin-top: 30px;
   }
 }
 
