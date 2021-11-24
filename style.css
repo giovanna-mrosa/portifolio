@@ -1236,9 +1236,7 @@ footer a:hover {
 @media (max-width: 320px) {
   .section-3 {
     flex-wrap: wrap;
-    margin-top: 200px;
     padding-top: 35px;
-    padding-bottom: 215px;
   }
   .title-section-3 {
     line-height: 55px;
